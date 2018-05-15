@@ -1,3 +1,21 @@
+ 
+.container-fluid {
+  margin-top: 20px;
+  margin-left: 10%;
+  width: 80%;
+  margin-right: 10%;
+}
+.navbar {
+  overflow: hidden;
+  background-color: skyblue;
+
+
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  
 /* Add a black background color to the top navigation */
 .topnav {
   background-color:  #333;
@@ -8,11 +26,64 @@
 /* Style the links inside the navigation bar */
 .topnav a {
   color: ##A93226;
+ 
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
+< 
+.navbar a:hover {
+  background: navy;
+  color: white;
+}
+.main {
+  padding: 16px;
+  margin-bottom: 30px;
+}
+#space {
+  width: 326px;
+}
+#space1 {
+  width: 326px;
+}
+h1 {
+  text-align: center;
+}
+.panel-footer {
+  height: 300px;
+  background-color: #d9edf7;
+}
+p {
+  font-family: 'Dekko', cursive;
+  font-size: 1.2em;
+  color: #31708f;
+}
+.showing {
+  display: none;
+}
+#icons {
+  margin-top: 40px;
+  margin-left: 400px;
+  width: 200px;
+}
+img {
+  height: 24px;
+  width: 24px;
+}
+hr {
+  display: block;
+  border-color: #31708f;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  border-style: inset;
+  border-width: 2px;
+}
+.licence {
+  text-align: center;
+  margin-top: 15px;
+ 
 /* Change the color of links on hover */
 .topnav a: hover {
   background-color: #ddd;
@@ -22,4 +93,5 @@
 .topnav a.active {
   background-color: #4CAF50;
   color: white;
+ 
 }
