@@ -1,4 +1,9 @@
  
+.submissionForm h1 {
+  font-size: 30px;
+  text-align: center;
+ 
+ 
 .container-fluid {
   margin-top: 20px;
   margin-left: 10%;
@@ -8,6 +13,20 @@
 .navbar {
   overflow: hidden;
   background-color: skyblue;
+  
+  position: fixed;
+  bottom: 0;
+  margin-left: 100px;
+ 
+}
+
+.panel-body {
+  font-size: 1.1em;
+  padding: 0;
+}
+
+#stars {
+ 
 
 
 }
@@ -27,11 +46,69 @@
 .topnav a {
   color: ##A93226;
  
+ 
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+  width: 270px;
+  display: inline-block;
+  margin-left: 36%;
 }
+input.star {
+  display: none;
+}
+label.star {
+  float: right;
+  padding: 10px;
+  font-size: 25px;
+  color: skyblue;
+  transition: all .2s;
+}
+input.star:checked~label.star:before {
+  content: '\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+input.star-5:checked~label.star:before {
+  color: #FE7;
+  text-shadow: 0 0 20px #952;
+}
+input.star-1:checked~label.star:before {
+  color: #F62;
+}
+label.star:hover {
+  transform: rotate(-15deg) scale(1.5);
+}
+label.star:before {
+  content: '\f006';
+  font-family: FontAwesome;
+}
+ 
+
+
+input[type=submit] {
+    background-color: skyblue;
+    color: white;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #1e90ff;
+}
+
+hr {
+  display: block;
+  margin-top: 5em;
+  margin-bottom: 2.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.commentsOut h1 {
+  font-size: 30px;
+ 
 < 
 .navbar a:hover {
   background: navy;
@@ -40,6 +117,7 @@
 .main {
   padding: 16px;
   margin-bottom: 30px;
+ 
 }
 #space {
   width: 326px;
