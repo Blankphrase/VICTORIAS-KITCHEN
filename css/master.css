@@ -1,6 +1,18 @@
+<<<<<<< HEAD
 .submissionForm h1 {
   font-size: 30px;
   text-align: center;
+=======
+ 
+ 
+ 
+.navbar {
+  overflow: hidden;
+  background-color: skyblue;
+  position: fixed;
+  bottom: 0;
+  margin-left: 100px;
+>>>>>>> d26105677fc1f8e2af6a52c5165e58a11c8aa675
 }
 
 .panel-body {
@@ -70,3 +82,4 @@ hr {
 .commentsOut h1 {
   font-size: 30px;
 }
+ 
