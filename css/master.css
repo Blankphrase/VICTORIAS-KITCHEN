@@ -1,9 +1,11 @@
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color:  #333;
+  background-color: #D1F2EB;
   overflow: hidden;
   float: right;
   height: 171px;
+  font-size: 100px;
+  padding-right: 0px;
 }
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -22,4 +24,28 @@
 .topnav a.active {
   background-color: #4CAF50;
   color: white;
+}
+body {
+  background-color: grey;
+}
+.header {
+  background-color: white;
+}
+.tree {
+  background-image: url("../images/nyamachoma2.jpg");
+  height: 598px;
+  text-align: center;
+  font-weight: bold;
+}
+input {
+  width: 400px;
+  height: 50px;
+}
+label {
+  color: #3498DB;
+  font-size: 35px;
+}
+.btn-danger {
+  width: 200px;
+  height: 50px;
 }
