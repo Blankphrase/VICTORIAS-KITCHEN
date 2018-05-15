@@ -1,3 +1,4 @@
+ 
 // User Interface
 function ClearText() {
   document.getElementById('textArea').value="";
@@ -27,3 +28,16 @@ $(document).ready(function() {
   });
 
 });
+ 
+ 
+$(document).ready(function(){
+    $("#space1").click(function(){
+        $(".showing").show();
+    });
+});
+ 
+$(document).ready(function() {
+  $(".carousel1").carousel();
+})
+ 
+ 
