@@ -1,7 +1,29 @@
-// (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-// (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-// m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-// })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-//
-// ga('create', 'UA-46156385-1', 'cssscript.com');
-// ga('send', 'pageview');
+// User Interface
+function ClearText() {
+  document.getElementById('textArea').value="";
+}
+$(document).ready(function() {
+  $('#review form').submit(function(event) {
+    var textArea = $('#textArea').val();
+    $('#prevComments').append('<div>' + textArea + '<ul>');
+
+    event.preventDefault();
+    ClearText();
+  });
+  $('#star-5').click(function() {
+    alert('Thank You For Giving Us A Very Good Rating. Ciao!');
+  });
+  $('#star-4').click(function() {
+    alert('Thank You For Giving Us A Good Rating. Ciao!');
+  });
+  $('#star-3').click(function() {
+    alert('Thank You For Giving Us A Rating.');
+  });
+  $('#star-2').click(function() {
+    alert('Thank You For Giving Us A Rating. Bye!');
+  });
+  $('#star-1').click(function() {
+    alert('THANK YOU, NO THANK YOU!..Hater');
+  });
+
+});

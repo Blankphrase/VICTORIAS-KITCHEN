@@ -14,14 +14,10 @@
   </head>
   <body>
 
-
-
-
-
     <div class="container review">
         <div class="panel-header submissionForm">
-          <h1>Rate your experience</h1>
-          <div class="stars">
+          <h1>Rate your experience!</h1>
+          <div id="stars">
             <form action="">
               <input class="star star-5" id="star-5" type="radio" name="star"/>
               <label class="star star-5" for="star-5"></label>
@@ -38,20 +34,18 @@
         </div>
         <div class="panel-body">
           <p>We value your feedback! Please enter any questions, comments or concerns in the field below.</p>
-          <form>
-            <div class="form-group">
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-          </form>
+          <div id="review">
+            <form action="">
+              <textarea class="form-control" id="textArea" rows="3"></textarea><br>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
         </div>
-        <div class="clearFix">
-          <input id="submitBtn" type="submit" value="Submit">
+        <hr>
+        <div class="panel-header commentsOut">
+          <h1>Reviews</h1>
         </div>
-        <div class="panel-header">
-          <h1>Comments</h1>
-        </div>
-          <div class="prevComments">
-
+          <div id="prevComments">
           </div>
     </div>
   </body>
