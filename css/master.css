@@ -1,3 +1,8 @@
+ 
+.submissionForm h1 {
+  font-size: 30px;
+  text-align: center;
+}
 .container-fluid {
   margin-top: 20px;
   margin-left: 10%;
@@ -6,9 +11,11 @@
 }
 .navbar {
   overflow: hidden;
-  background-color: skyblue;
-
-
+  background-color: skyblue;   
+}
+.panel-body {
+  font-size: 1.1em;
+  padding: 0;
 }
 .navbar a {
   float: left;
@@ -16,8 +23,68 @@
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
+  font-size: 17px;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+}  
+#stars {
+  text-align: center;
+  width: 270px;
+  display: inline-block;
+  margin-left: 36%;
+}
+input.star {
+  display: none;
+}
+label.star {
+  float: right;
+  padding: 10px;
+  font-size: 25px;
+  color: skyblue;
+  transition: all .2s;
+}
+input.star:checked~label.star:before {
+  content: '\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+input.star-5:checked~label.star:before {
+  color: #FE7;
+  text-shadow: 0 0 20px #952;
+}
+input.star-1:checked~label.star:before {
+  color: #F62;
+}
+label.star:hover {
+  transform: rotate(-15deg) scale(1.5);
+}
+label.star:before {
+  content: '\f006';
+  font-family: FontAwesome;
+}
+ 
+input[type=submit] {
+    background-color: skyblue;
+    color: white;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #1e90ff;
+}
+
+ 
+
+.commentsOut h1 {
+  font-size: 30px;
 }
 .navbar a:hover {
   background: navy;
@@ -26,6 +93,7 @@
 .main {
   padding: 16px;
   margin-bottom: 30px;
+ 
 }
 #space {
   width: 326px;
@@ -53,7 +121,7 @@ p {
   margin-left: 400px;
   width: 200px;
 }
-img {
+img.icon {
   height: 24px;
   width: 24px;
 }
@@ -69,4 +137,54 @@ hr {
 .licence {
   text-align: center;
   margin-top: 15px;
+ 
+/* Change the color of links on hover */
+.topnav a: hover {
+  background-color: navy;
+  color: white;
+}
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: red;
+  color: white;
+ 
+}
+.subscribe {
+  background-image: url("../images/nyamachoma.jpg");
+  height: 479px;
+}
+section {
+  font-family: 'Merienda';
+  background-color: skyblue;
+  height: 180px;
+  padding-top: 15px;
+  padding-left: -5px;
+  font-weight: bold;
+}
+.photos {
+  display:none;
+}
+.tree {
+  background-image: url("../images/nyamachoma2.jpg");
+  height: 598px;
+  text-align: center;
+  font-weight: bold;
+}
+input {
+  width: 400px;
+  height: 50px;
+}
+label {
+  color: #3498DB;
+  font-size: 35px;
+}
+.btn-danger {
+  width: 200px;
+  height: 50px;
+}
+ /* .home {
+  display:none;
+} */
+.review {
+  display: none;  
 }
