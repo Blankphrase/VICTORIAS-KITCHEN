@@ -1,4 +1,3 @@
- 
 // User Interface
 function ClearText() {
   document.getElementById('textArea').value="";
@@ -6,7 +5,7 @@ function ClearText() {
 $(document).ready(function() {
   $('#review form').submit(function(event) {
     var textArea = $('#textArea').val();
-    $('#prevComments').append('<div>' + textArea + '<ul>');
+    $('#prevComments').append(textArea + '<ul>');
 
     event.preventDefault();
     ClearText();
@@ -26,18 +25,17 @@ $(document).ready(function() {
   $('#star-1').click(function() {
     alert('THANK YOU, NO THANK YOU!..Hater');
   });
+  $("#space1").click(function(){
+    $(".showing").show();
+  });
+  $('a#photos').click(function() {
+    $('div.photos').toggle();
+  });
+  $('a#home').click(function() {
+    $('div.photos').hide();
+  });
+  $('#review').click(function() {
+    $('.review').show();
+  });
+});
 
-});
- 
- 
-$(document).ready(function(){
-    $("#space1").click(function(){
-        $(".showing").show();
-    });
-});
- 
-$(document).ready(function() {
-  $(".carousel1").carousel();
-})
- 
- 
