@@ -24,14 +24,6 @@
   text-align: center;
   padding: 14px 16px;
   font-size: 17px;
-  
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: skyblue;
-  overflow: hidden;
-  float: right;
-  height: 171px;
-  font-size: 105px;
 }
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -171,6 +163,24 @@ section {
 }
 .photos {
   display:none;
+}
+.tree {
+  background-image: url("../images/nyamachoma2.jpg");
+  height: 598px;
+  text-align: center;
+  font-weight: bold;
+}
+input {
+  width: 400px;
+  height: 50px;
+}
+label {
+  color: #3498DB;
+  font-size: 35px;
+}
+.btn-danger {
+  width: 200px;
+  height: 50px;
 }
  /* .home {
   display:none;
