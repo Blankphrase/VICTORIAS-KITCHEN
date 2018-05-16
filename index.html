@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/master.css" rel="stylesheet" type="text/css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Delius+Swash+Caps|Eagle+Lake|Merienda+One" rel="stylesheet">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="css/master.css" rel="stylesheet" type="text/css" media="all">
     <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Delius+Swash+Caps|Eagle+Lake|Merienda+One" rel="stylesheet">
@@ -12,16 +14,214 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>VICTORIA'S KITCHEN</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
   </head>
   <body>
- 
-    <div class="container-fluid">
-      <div class="panel panel-info">
-        <div class="panel-heading">
-          <h1><strong>VICTORIAS-KITCHEN</strong></h2>
+    <div class="container">
+    		<header class="header">
+          <img src="images/header.gif" alt="victorias-kitchen">
+          <div class="topnav">
+            <a class="active" href="#home" id="home">HOME</a>
+            <a href="#news">MENU</a>
+            <a href="#contact">CONTACT</a>
+            <a href="#about">ABOUT</a>
+            <a href="#photos" id="photos">PHOTOS</a>
+            <a href="#reviews">REVIEWS</a>
+          </div>
+        </header>
+      </div>
+      <br>
+      <br>
+      <br>
+<div class="container home">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <a href="githeri.html"><img src="images/githeri.jpg" alt="chapati" style="width:100%; height:100%;"></a>
+              <div class="carousel-caption">
+                <h3>Chapatis</h3>
+                <p>Very soft and delicious!</p>
+              </div>
+            </div>
+            <div class="item">
+              <a href="matoke.html"><img src="images/matoke3.jpg" alt="ugali" style="width:100%; height:100%;"></a>
+              <div class="carousel-caption">
+                <h3>Ugali and Samaki</h3>
+                <p>Sumptious!</p>
+              </div>
+            </div>
+            <div class="item">
+              <a href="kachumbari.html"><img src="images/Kachumbari.jpg" alt="kachumbari" style="width:100%; height:100%"></a>
+              <div class="carousel-caption">
+                <h3>Kachumbari</h3>
+                <p>Appetizing!</p>
+              </div>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+      </div>
+    <div class="container review">
+      <div class="panel-header submissionForm">
+        <h1>Rate your experience!</h1>
+        <div id="stars">
+            <form action="">
+              <input class="star star-5" id="star-5" type="radio" name="star"/>
+              <label class="star star-5" for="star-5"></label>
+              <input class="star star-4" id="star-4" type="radio" name="star"/>
+              <label class="star star-4" for="star-4"></label>
+              <input class="star star-3" id="star-3" type="radio" name="star"/>
+              <label class="star star-3" for="star-3"></label>
+              <input class="star star-2" id="star-2" type="radio" name="star"/>
+              <label class="star star-2" for="star-2"></label>
+              <input class="star star-1" id="star-1" type="radio" name="star"/>
+              <label class="star star-1" for="star-1"></label>
+            </form>
+          </div>
+      </div>
+      <div class="panel-body">
+          <p>We value your feedback! Please enter any questions, comments or concerns in the field below.</p>
+          <div id="review">
+            <form action="">
+              <textarea class="form-control" id="textArea" rows="3"></textarea><br>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
         </div>
-        <div class="panel-body">
-          <div class="showing">
+      <hr>
+      <div class="panel-header commentsOut">
+          <h1>Reviews</h1>
+        </div>
+      <div id="prevComments">
+          </div>
+ 
+		
+      
+      
+      <div class="container photos">
+        <br>
+        <br>
+        <br>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3">
+              <section>
+                <h2>CATEGORIES</h2>
+                <ul>
+                  <li><a href="#">REGULAR</a></li>
+                  <li><a href="#">PREMIUM</a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col-md-3">
+              <a href="pilau.html"><img src="images/noodle.JPG"></a>
+            </div>
+            <div class="col-md-3">
+              <a href="beefStew.html"><img src="images/Soto1.jpg"></a>
+            </div>
+            <div class="col-md-3">
+              <a href="chicken.html"><img src="images/Soto.JPG"></a>
+            </div>
+            <br>
+            <br>
+          </div>
+          <br>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-md-3">
+              <a href="matoke.html"><img src="images/Trujillo.jpg"></a>
+            </div>
+            <div class="col-md-3">
+              <a href="sukumaWiki.html"><img src="images/riceveg.jpg"></a>
+            </div>
+            <div class="col-md-3">
+              <a href="beefStew"><img src="images/lucho.jpg"></a>
+            </div>
+            <div class="col-md-3">
+              <a href="nyamaChoma.html"><img src="images/Gimchi.jpg"></a>
+            </div>
+          </div>
+      </div>
+      <div class="container menu">
+        <div class="col-md-3">
+          <h2>Menu</h2>
+          <ul>
+            <li>BeefStew</li>
+            <li>Chapati</li>
+            <li>Chicken</li>
+            <li>Githeri</li>
+            <li>Kachumbari</li>
+            <li>Kaimati</li>
+            <li>Matoke</li>
+            <li>NyamaChoma</li>
+            <li>Pilau</li>
+            <li>SukumaWiki</li>
+            <li>Ugali</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          WELCOME TO OUR WEBSITE
+          <br>
+          TRY OUT OUR HANDS ON RECIPES
+          <br>
+          FROM THE RICH LISTS ON THE SIDES
+        </div>
+        <div class="col-md-3">
+          <h2>Menu</h2>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+    </div>
+      <br>
+      <br>
+      <br>
+    <div class="container tree">
+      <br>
+      <br>
+      <br>
+      <form>
+        <label> Subscribe to receive our newsletter and latest recipe </label><br>
+        <input type="text" value="Email address"><br>
+        First name:<br>
+        <input type="text" name="firstname"><br>
+         Last name:<br>
+         <input type="text" name="lastname"
+        <button class="btn-danger"> Subscribe </button>
+      </form>
+    </div>
+      <br>
+      <br>
+      <div class="container">
+        <img src="images/facebook2.png"><p>VICTORIAS-KITCHEN</p>
+        <img src="images/instagram128.png"><p>VICTORIAS-KITCHEN</P>
+        <img src="images/pinterest.png"><p>VICTORIAS-KITCHEN</p>
+        <img src="images/twitter_circle_color-256.png"><p>VICTORIAS-KITCHEN</p>
+    </div>
+          <div class="showing container">
             <h2>ABOUT</h2>
             <p>We provide a collection of well detailed recipes for a variety of local cuisine.
             Our aim is to revolutionise the hospitality industry by establish an avenue that
@@ -31,8 +231,7 @@
             Above all, we hope to deliver a service that reminds you of the good times, as most Kenyan dishes are be best enjoyed sharing style, the way we eat at home, with our closest family and friends.</p>
 
           </div>
-        </div>
-        <div class="panel-footer">
+     <div class="panel-footer container">
           <div class="navbar">
             <div class="col-md-4">
             <a href="#home.html" id="space">HOME</a><br>
@@ -65,20 +264,5 @@
           <p class="licence"> Created by Clifford Kasera, Reuben Njuguna, Victoria Mayuya and Elvis Amuni.<br>Copyright © | 2018 Victoria's Kitchen, Inc., All rights reserved. </p>
         </div>
       </div>
- 
-    <div class="container header">
-  		<header>
-        <img src="images/header.gif" alt="victorias-kitchen">
-        <div class="topnav">
-          <a class="active" href="#home">HOME</a>
-          <a href="#news">MENU</a>
-          <a href="#contact">CONTACT</a>
-          <a href="#about">ABOUT</a>
-          <a href="#photos">PHOTOS</a>
-          <a href="#reviews">REVIEWS</a>
-        </div>
-      </header>
- 
-    </div>
   </body>
 </html>
