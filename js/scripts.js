@@ -1,4 +1,3 @@
- 
 // User Interface
 function ClearText() {
   document.getElementById('textArea').value="";
@@ -6,7 +5,7 @@ function ClearText() {
 $(document).ready(function() {
   $('#review form').submit(function(event) {
     var textArea = $('#textArea').val();
-    $('#prevComments').append('<div>' + textArea + '<ul>');
+    $('#prevComments').append(textArea + '<ul>');
 
     event.preventDefault();
     ClearText();
@@ -34,6 +33,9 @@ $(document).ready(function() {
   });
   $('a#home').click(function() {
     $('div.photos').hide();
+  });
+  $('#review').click(function() {
+    $('.review').show();
   });
 });
 
