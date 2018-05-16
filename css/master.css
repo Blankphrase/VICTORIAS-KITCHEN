@@ -1,18 +1,15 @@
-<<<<<<< HEAD
 .submissionForm h1 {
   font-size: 30px;
   text-align: center;
-=======
- 
- 
- 
+}
+
+
 .navbar {
   overflow: hidden;
   background-color: skyblue;
   position: fixed;
   bottom: 0;
   margin-left: 100px;
->>>>>>> d26105677fc1f8e2af6a52c5165e58a11c8aa675
 }
 
 .panel-body {
@@ -73,7 +70,7 @@ hr {
   display: block;
   margin-top: 5em;
   margin-bottom: 2.5em;
-  margin-left: auto;
+  margin-left:  auto;
   margin-right: auto;
   border-style: inset;
   border-width: 1px;
@@ -82,4 +79,3 @@ hr {
 .commentsOut h1 {
   font-size: 30px;
 }
- 
