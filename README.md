@@ -10,7 +10,7 @@ This webpage is created with an aim to help people find the recipe for any food 
 The site has a subscribe section that makes use of the Mailchimp Api that enables users to subscribe via email for the latest recipes from victoria's kitchen.
 The site has a reviews section where users can make comments and leave stars based on their experience on the site.
 ## Setup/Installation Requirements
-* With a web browser one is good to view the site at:
+* With a web browser one is good to view the site at: https://blankphrase.github.io/VICTORIAS-KITCHEN/
 * One should allow javascript in their browser
 * A server is not required to run
 * No dependencies to be installed
