@@ -1,3 +1,4 @@
+
 function ClearText() {
  document.getElementById('textArea').value="";
 }
