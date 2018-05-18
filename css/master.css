@@ -1,38 +1,93 @@
- 
-.submissionForm h1 {
-  font-size: 30px;
-  text-align: center;
+.heading {
+  background-color: skyblue;
+  width: 1140px;
 }
-.container-fluid {
-  margin-top: 20px;
-  margin-left: 10%;
-  width: 80%;
-  margin-right: 10%;
+@font-face {
+ font-family: freeBooter;
+ src: url(../fonts/freeBooter1.ttf);
 }
-.navbar {
+.headTitle {
+ color: #A51F02;
+ text-align: center;
+ font-family: freeBooter;
+ font-size: 85px;
+ text-shadow: -3px 2px 0px rgba(192, 220, 63, 1);
+ font-weight: 500;
+ transform: rotate(-8deg);
+ -ms-transform: rotate(-8deg); /* IE 9 */
+ -webkit-transform: rotate(-8deg); /* Safari 3-8 */
+ margin: 20px 100px 75px 100px;
+}
+#headTitle2 {
+ padding-left: 5%;
+}
+.topnav {
   overflow: hidden;
-  background-color: skyblue;   
+  background-color: skyblue;
+  width: 1140px;
 }
-.panel-body {
-  font-size: 1.1em;
-  padding: 0;
+.topnav a:hover {
+  background-color: navy;
+  color: white;
 }
-.navbar a {
+.topnav a {
   float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
-  font-size: 17px;
-}
-/* Style the links inside the navigation bar */
-.topnav a {
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-}  
+  width: 185px;
+}
+.home {
+  overflow: hidden;
+}
+.jumbotron{
+  display: none;
+}
+#beef:hover,#chapati:hover,#chicken:hover,#githeri:hover,#kachumbari:hover,#kaimati:hover,#matoke:hover,#nyama:hover,#pilau:hover,#sukuma:hover,#ugali:hover {
+  text-decoration: underline;
+  color: navy;
+  cursor: pointer;
+}
+.about{
+  background-color: skyblue;
+  width: 1140px;
+  height: 400px;
+  font-size: 1.6em;
+  padding-left: 100px;
+  padding-right: 120px;
+  font-family: 'Itim', cursive;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.menu{
+  background-color: #C0DC3F;
+  padding: 25px;
+  width: 1140px;
+  font-family: 'Sofia', cursive;
+}
+.photos{
+  padding: 25px;
+  background-color: skyblue;
+  width: 1140px;
+  height: 500px;
+}
+.contact{
+  background-image: url("../images/CHICKEN-SAMOSA.jpg");
+  padding-top: 50px;
+  height: 250px;
+  width: 1140px;
+}
+.review {
+  width: 1140px;
+  font-size: 1.1em;
+
+  font-family: 'Petit Formal Script', cursive;
+  background-color: #C0DC3F;
+}
 #stars {
   text-align: center;
   width: 270px;
@@ -68,123 +123,86 @@ label.star:before {
   content: '\f006';
   font-family: FontAwesome;
 }
- 
 input[type=submit] {
-    background-color: skyblue;
-    color: white;
-    padding: 7px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  background-color: skyblue;
+  color: white;
+  padding: 7px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 input[type=submit]:hover {
-    background-color: #1e90ff;
+  background-color: #1e90ff;
 }
-
- 
-
-.commentsOut h1 {
-  font-size: 30px;
+#mc_embed_signup {
+  background: transparent;
+  clear:left;
+  font:14px Helvetica,Arial,sans-serif;
+}
+span.icon{
+  float: right;
+  margin-right: 400px;
+  margin-top: 5px;
+}
+#textArea{
+  width: 75%;
+}
+.panel-body {
+  width: 80%
+  padding:15px;
+}
+.about {
+  display: none;
+}
+.menu {
+  display: none;
+}
+.contact {
+  display: none;
+}
+.review {
+  display: none;
+}
+.photos {
+  display: none;
+}
+.navbar {
+  overflow: hidden;
+  background-color: skyblue;
+  width: 1100px;
+}
+.navbar a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px;
 }
 .navbar a:hover {
   background: navy;
   color: white;
 }
-.main {
-  padding: 16px;
-  margin-bottom: 30px;
- 
-}
-#space {
-  width: 326px;
-}
-#space1 {
-  width: 326px;
-}
-h1 {
-  text-align: center;
-}
-.panel-footer {
-  height: 300px;
-  background-color: #d9edf7;
-}
-p {
-  font-family: 'Dekko', cursive;
-  font-size: 1.2em;
-  color: #31708f;
-}
-.showing {
-  display: none;
-}
-#icons {
-  margin-top: 40px;
-  margin-left: 400px;
-  width: 200px;
-}
-img.icon {
-  height: 24px;
-  width: 24px;
-}
 hr {
   display: block;
   border-color: #31708f;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
   border-style: inset;
   border-width: 2px;
+  width: 1100px;
+}
+#icons {
+  width: 150px;
+  margin-left: 400px;
+}
+.footer {
+  background-color:skyblue;
+  padding: 25px;
+  width: 1140px;
+}
+.icon {
+  height: 25px;
+  width: 25px;
 }
 .licence {
   text-align: center;
   margin-top: 15px;
- 
-/* Change the color of links on hover */
-.topnav a: hover {
-  background-color: navy;
-  color: white;
-}
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: red;
-  color: white;
- 
-}
-.subscribe {
-  background-image: url("../images/nyamachoma.jpg");
-  height: 479px;
-}
-section {
-  font-family: 'Merienda';
-  background-color: skyblue;
-  height: 180px;
-  padding-top: 15px;
-  padding-left: -5px;
-  font-weight: bold;
-}
-.photos {
-  display:none;
-}
-.tree {
-  background-image: url("../images/nyamachoma2.jpg");
-  height: 598px;
-  text-align: center;
-  font-weight: bold;
-}
-input {
-  width: 400px;
-  height: 50px;
-}
-label {
-  color: #3498DB;
-  font-size: 35px;
-}
-.btn-danger {
-  width: 200px;
-  height: 50px;
-}
- /* .home {
-  display:none;
-} */
-.review {
-  display: none;  
 }
