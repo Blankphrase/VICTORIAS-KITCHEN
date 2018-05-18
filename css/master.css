@@ -1,4 +1,4 @@
- 
+
 .submissionForm h1 {
   font-size: 30px;
   text-align: center;
@@ -11,7 +11,7 @@
 }
 .navbar {
   overflow: hidden;
-  background-color: skyblue;   
+  background-color: skyblue;
 }
 .panel-body {
   font-size: 1.1em;
@@ -32,7 +32,7 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-}  
+}
 #stars {
   text-align: center;
   width: 270px;
@@ -68,7 +68,7 @@ label.star:before {
   content: '\f006';
   font-family: FontAwesome;
 }
- 
+
 input[type=submit] {
     background-color: skyblue;
     color: white;
@@ -81,7 +81,7 @@ input[type=submit]:hover {
     background-color: #1e90ff;
 }
 
- 
+
 
 .commentsOut h1 {
   font-size: 30px;
@@ -93,7 +93,7 @@ input[type=submit]:hover {
 .main {
   padding: 16px;
   margin-bottom: 30px;
- 
+
 }
 #space {
   width: 326px;
@@ -137,8 +137,7 @@ hr {
 .licence {
   text-align: center;
   margin-top: 15px;
- 
-/* Change the color of links on hover */
+}
 .topnav a: hover {
   background-color: navy;
   color: white;
@@ -147,7 +146,7 @@ hr {
 .topnav a.active {
   background-color: red;
   color: white;
- 
+
 }
 .subscribe {
   background-image: url("../images/nyamachoma.jpg");
@@ -186,5 +185,10 @@ label {
   display:none;
 } */
 .review {
-  display: none;  
+  display: none;
+}
+.topnav {
+  float: right;
+  background-color: skyblue;
+  font-size: 120px;
 }
