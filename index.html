@@ -1,17 +1,540 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="	crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Itim|Merienda+One|Petit+Formal+Script|Pinyon+Script|Sofia" rel="stylesheet">
     <link href="css/master.css" rel="stylesheet" type="text/css" media="all">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 													crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>VICTORIA'S KITCHEN</title>
   </head>
   <body>
+    <div class="container heading">
+      <h1 class="headTitle">Victoria's <br><span id="headTitle2">Kitchen</span></h1>
+    </div>
+    <div class="container topnav">
+      <a class="home1">HOME</a>
+      <a class="menu1">MENU</a>
+      <a class="about1">ABOUT</a>
+      <a class="photos1">PHOTOS</a>
+      <a class="contact1">CONTACT</a>
+      <a class="reviews1">REVIEWS</a>
+    </div>
+    <div class="container home">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="images/p-ugali.jpg" alt="ugali" style="width:1140px; height:560px;">
+            <div class="carousel-caption">
+              <h3>Ugali and Fish</h3>
+              <p>Delicious and healthy</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/nyamachoma2.jpg" alt="beefstew" style="width:1140px; height:560px;">
+            <div class="carousel-caption">
+              <h3>NyamaChoma</h3>
+              <p>Tasty!</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/chapati2.jpg" alt="chapati" style="width:1140px; height:560px;"></a>
+            <div class="carousel-caption">
+              <h3>Chapatis</h3>
+              <p>Sumptious!</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/large_Best-Ever-Beef-Stew.jpg" alt="beefstew" style="width:1140px; height:560px;"></a>
+            <div class="carousel-caption">
+              <h3>BeefStew</h3>
+              <p>Very delicious!</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/Kachumbari.jpg" alt="samosa" style="width:1140px; height:560px;">
+            <div class="carousel-caption">
+              <h3>kachumbari</h3>
+              <p>Appetizing!</p>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container about">
+      <h2>ABOUT</h2>
+      <p>We provide a collection of well detailed recipes for a variety of local cuisine.
+        Our aim is to revolutionise the hospitality industry by establish an avenue that
+        is easily accessible, through which our clients can view the easy and simple to follow recipes.
+        Our menu is full reflective of our indentity by incooperating both modern and traditional cuisine.
+        The recipes use ingredients that are readily available at the nearest local market or shop.
+        Above all, we hope to deliver a service that reminds you of the good times, as most Kenyan dishes are be best enjoyed sharing style, the way we eat at home, with our closest family and friends.
+      </p>
+    </div>
+    <div class="container menu">
+      <div class="row">
+        <h2>Menu</h2>
+        <p>WELCOME TO OUR MENU TRY OUT OUR HANDS ON RECIPES FROM THE RICH LISTS ON THE SIDE</p>
+        <div class="col-md-3">
+          <ul>
+            <li id="beef">BeefStew</li>
+            <li id="chapati">Chapati</li>
+            <li id="chicken">Chicken</li>
+            <li id="githeri">Githeri</li>
+            <li id="kachumbari">Kachumbari</li>
+            <li id="kaimati">Kaimati</li>
+            <li id="matoke">Matoke</li>
+            <li id="nyama">NyamaChoma</li>
+            <li id="pilau">Pilau</li>
+            <li id="sukuma">SukumaWiki</li>
+            <li id="ugali">Ugali</li>
+          </ul>
+        </div>
+        <div class="col-md-9 menuTxt">
+          <div class="jumbotron beef">
+            <h4>Ingredients</h4>
+            <ul>
+              <li>1/2 kg beef, cut into bite sizes,</li>
+              <li>1 cup of water, </li>
+              <li>4 tablespoons vegetable or olive oil, </li>
+              <li>1 big red onion or 2 small ones, </li>
+              <li>diced 5 garlic cloves, </li>
+              <li>minced 1 inch fresh ginger, </li>
+              <li>minced 3-4 fresh tomatoes, </li>
+              <li>diced 1 teaspoon tomatopaste 2 carrots,</li>
+              <li>diced 5 small potatoes, </li>
+              <li>diced 3 Bay leaves, </li>
+              <li>Â½ teaspoon paprika powder,</li>
+              <li>Â½ teaspoon curry powder Salt and,</li>
+              <li>fresh ground pepper to taste Fresh coriander for garnishing.</li>
+            </ul>
+            <h4>Instructions<h4>
+              <p>In a saucepan, place meat, ginger, garlic and 1 cup of water. Boil the meat for roughly 30 minutes on medium heat Separate meat from broth and set aside (you'll need the broth later for the stew) In a separate saucepan, heat vegetable oil on medium heat, fry onions till soft. Add beef and fry till it starts to brown. Add tomatoes and tomato paste and cook till the fresh tomatoes have softened. Add the spices; curry powder and paprika and mix well. Let the mixture simmer for a minute or two for the spices to mix well with the beef. Add carrots and potatoes and stir well, again let the mixture simmer about five minutes stirring each minute to avoid sticking in the pan. Once everything has mixed in well add the broth you had set aside earlier. Stir well and throw in the bay leaves, lower the heat to low and Simmer for about 45 minutes or until the meat is tender stirring from time to time. Season with salt and pepper Ganish with fresh corinder and serve hot with rice, ugali or chapati.
+              </p>
+            </div>
+          <div class="jumbotron chapati">
+              <h4>Ingredients</h4>
+              <ul>
+                <li>(6 servings) 1 cup of whole wheat flour </li>
+                <li>1 cup white flour 2 tbsp oil or ghee 3/4 kg  </li>
+                <li>1 cup of warm water Salt to taste </li>
+              </ul>
+              <h4>Directions</h4>
+              <p>Mix the flour in a bowl and add salt and oil.
+                You can mix with clean hands, or use a mixer or food processor.
+                Add a little bit of water at a time and knead well for about 10 minutes until you have a stiff and smooth dough.
+                Cover the dough and let it stand for at least 30 minutes up to two hours. Knead the dough well again and divide it into egg-sized balls. Dust each ball with extra flour. Flatten each ball and roll out thinly into sizeable circles. Heat an ungreased, heavy skillet or griddle over a medium flame. Lightly grease the pan and slowly heat the first chapati. Cook on one side for about 1 minute or until lightly brown, then flip and brown the other side. Press the sides of the chapati with a spoon until it puffs. Remove the chapati from the skillet into a warm dish or foil paper and wrap it to keep it warm. Repeat this process for every chapati, wiping the pan with greased paper every time a new chapati is to be cooked. Serve the chapatis warm with a meat stew and/or cooked vegetables. Chapatis can also be served with hot milk or chai.
+              </p>
+            </div>
+          <div class="jumbotron chicken">
+              <h3>Chicken Curry Recipe - Kenyan
 
+
+                style<h3>
+                  <h4>ingredients (4-6 servings)<h4>
+                    <ul>
+                      <li>4 kgs chicken, skinned and cut into pieces</li>
+                      <li>3 cups water </li>
+                      <li>Ground white pepper Salt</li>
+                      <li>1 medium onion, finely chopped</li>
+                      <li>2 tbsp vegetable oil </li>
+                      <li>6 tomatoes, skinned and chopped</li>
+                      <li>Pinch garam masala </li>
+                      <li>Pinch ground coriander </li>
+                      <li>Â½ tsp ground black pepper </li>
+                      <li>Â½ tsp ground nutmeg </li>
+                      <li>Â½ tsp ground turmeric </li>
+                      <li>Â½ tsp ground ginger </li>
+                      <li>Â½ tsp ground cayenne pepper</li>
+                      <li>Â½ tsp ground cumin 4 garlic cloves,</li>
+                    </ul>
+                    <h4>Instructions</h4>
+                    <p>Rub salt, pepper, and garlic into the chicken pieces and roast them in the oven at 350Â°F until golden brown. Cook the onions in the oil over high heat until crisp. Remove the onions and mash them. Add the tomatoes, spices and water. Cook until thick. Add the chicken pieces, garlic, and the mashed onions. Simmer all until cooked through, about 20 minutes. Serve with rice.
+                    </p>
+                  </div>
+          <div class="jumbotron githeri">
+                    <h3>Githeri (Dry Maize & Beans) Recipe</h3>
+                    <h4>Ingredients (4 servings)<h4>
+                      <ul>
+                        <li>½ pound dried red beans</li>
+                        <li>1 pound dried maize (corn)</li>
+                        <li>3 medium onions, chopped</li>
+                        <li>1 tbsp vegetable oil</li>
+                        <li>Salt</li>
+                      </ul>
+                      <h4>Directions</h4>
+                      <p>Cover the red beans and maize with water and soak overnight. Drain. Cover again with water, add salt to taste and boil for 2½ hours or until the maize and beans are soft. Drain and set aside. Fry the onions in the vegetable oil until golden brown. Mix in the maize and beans and simmer for 5 minutes before serving.
+                      </p>
+                    </div>
+          <div class="jumbotron kachumbari">
+                      <h3>kachumbari Salad Recipe</h3>
+                      <h4>Ingredients (6 servings)</h4>
+                      <ul>
+                        <li>4 medium tomatoes, sliced</li>
+                        <li>2 medium onions, finely chopped, washed with salted water, and drained</li>
+                        <li>½ cup fresh squeezed lime or lemon juice</li>
+                        <li>1 cup finely chopped cilantro, Dhania or parsley</li>
+                        <li>3 grated carrots</li>
+                      </ul>
+                      <h4>Instructions</h4>
+                      <p>Arrange the tomatoes on a serving platter with onions on top. Sprinkle the parsley (or cilantro) over the top. Place the grated carrots to one side. Splash the lemon juice over all. Do not toss. Serve cold with nyamachoma or pilau.
+                      </p>
+                    </div>
+          <div class="jumbotron kaimati">
+                      <h4>Ingredients</h4>
+                      <ul>
+                        <li>1 cup all purpose flour</li>
+                        <li>½ cup natural plain yoghurt</li>
+                        <li>½ cup water</li>
+                        <li>1 teaspoon instant yeast</li>
+                        <li>1 teaspoon sugar</li>
+                        <li>1 teaspoon cinnamon powder</li>
+                        Ingredients for the Syrup
+                        <li>1 cup sugar</li>
+                        <li>1 cup water</li>
+                        <li>2 tablespoons ground cardamom</li>
+                        <li>1 tablespoon lemon juice</li>
+                        <li>Grated lemon rids (optional)</li>
+                      </ul>
+                      <h4>Instructions</h4>
+                      <p>In a mixing bowl, add all ingredients and mix very well till the batter becomes sticky
+                        Cover and set aside for 1-2 hours to puff up (can also leave it aside overnight)
+                        In the meantime, prepare the syrup by;
+                        Adding sugar and water in a saucepan and bring to a boil. Lower the heat and add lemon juice (grated lemon rinds) and cardamom then simmer for about 5-8 minutes or till it’s sticky. The syrup should coat a spoon when ready
+                        Remove from heat and set aside to cool completely
+                        In a wok, heat 2 cups of vegetable oil and using a small ice cream scoop or a spoon, drop dumplings in the hot oil and fry till golden brown
+                        Drop in the ready dumplings in the syrup and coat them for one minute (the longer you leave them the more syrup they’ll absolve hence becoming very sweet)
+                        Another way of enjoying kaimatis is by coating them with powdered sugar
+                        Or with melted chocolate
+                      </p>
+                    </div>
+          <div class="jumbotron matoke">
+                      <h4>Ingredients</h4>
+                      <ul>
+                        <li>6 Matoke</li>
+                        <li>250g beef, cut into bite sizes</li>
+                        <li>3-4 bone marrow</li>
+                        <li>3 medium potatoes, peeled, washed and cut in quarters</li>
+                        <li>2 medium carrots, washed, peeled and cut in into sticks</li>
+                        <li>2 spring onions, chopped</li>
+                        <li>3 medium tomatoes, diced</li>
+                        <li>4 garlic cloves, minced</li>
+                        <li>1 teaspoon tomato paste</li>
+                        <li>1 teaspoon salt</li>
+                        <li>4 tablespoons vegetable oil</li>
+                        <li>1 glass of water</li>
+                        <li>a bunch of fresh coriander for garnishing</li>
+                        <li>a piece of bread to go with (optional)</li>
+                      </ul>
+                      <h4>Instructions</h4>
+                      <p>Start by filling a big pot with water enough to cover the plantains and bringing it to a boil. Place the plantains in the boiling water and boil for 10 minutes. Remove from heat and set aside to cool off. Once cooled, peel of the skin and set aside
+                        In a saucepan place beef, bone marrow, garlic and the glass of water and boil on medium heat for 20 minutes
+                        Separate meat from broth and set aside (you’ll need the broth later)
+                        In the same saucepan, heat up oil on medium heat, add onions and fry till soft and translucence. Add beef and fry till it starts to brown. Add tomatoes and tomato paste and cook until the fresh tomatoes have softened.
+                        Add carrots and potatoes and stir the mixture well. Let it simmer on low heat for about 5 minutes stirring in between to avoid it from burning
+                        Add the broth you had set aside earlier and stir in salt to taste. Let it boil for a minute or two. Place Matoke / Plantain (you can leave them whole or cut them in half or as you desire) in the boiling broth, lower the heat to low and simmer the mixture for about 30-45 minutes or until Matoke / Plantain are done. Gently stir in between to avoid it from sticking at the bottom of the pan but also be careful not to break the Matoke / Plantain
+                        Garnish with fresh coriander and serve hot with a piece of bread on the side.
+                      </p>
+                    </div>
+          <div class="jumbotron nyama">
+                      <h3>Nyama Choma (Roast Meat)</h3>
+                      <h4>Ingredients (3-4 servings)</h4>
+                      <ul>
+                        <li>3 lbs beef, short ribs or spare ribs</li>
+                        <li>Salt and pepper to taste</li>
+                      </ul>
+                      <h4>Instructions</h4>
+                      <p>Season the meat with salt and pepper. Grill on a gas or charcoal grill over medium heat 30 minutes. You can also roast the meat in an oven at 300°F for 1¼ hours. Meat should be golden brown, tender and juicy when ready. Nyama choma goes well with ugali and kachumbari or cooked greens.
+                      </p>
+                    </div>
+          <div class="jumbotron pilau">
+            <h3>Kenya Rice Pilau (Rice Pilaf) Recipe</h3>
+            <h4>Ingredients (6 servings)<h4>
+            <ul>
+              <li>1 pound goat, mutton or beef cubes</li>
+              <li>4 garlic cloves</li>
+              <li>Salt</li>
+              <li>9 cardamom pods</li>
+              <li>4 tbsp vegetable oil</li>
+              <li>1 large onion, chopped</li>
+              <li>3 cups rice</li>
+              <li>10 whole black peppercorns</li>
+              <li>8 whole cloves</li>
+              <li>8 cinnamon sticks</li>
+              <li>1 tsp ground ginger</li>
+              <li>¼ cup cumin seed powder</li>
+              <li>4 small tomatoes</li>
+              <li>6 cups water</li>
+            </ul>
+            <h4>Instructions</h4>
+            <p>Boil the meat in salted water until tender. Crush the garlic and cardamom together with 2tbsp water using a mortar and pestle. Sautee the onion until it is golden brown. Add the rice, meat, garlic and cardamom mixture, peppercorns, cloves, cinnamon, ginger and cumin seed powder. Cook covered over medium heat until all are nicely brown, about 10 minutes. Add the tomatoes. Cook and stir until the tomatoes are thoroughly cooked down to the consistency of a sauce. Add the 6 cups water to the rice mixture, bring to a boil and then cook over very low heat, (while covered) for another 15-20 minutes, until all water is absorbed and the rice is cooked through. Serve with kachumbari.
+            </p>
+          </div>
+          <div class="jumbotron sukuma">
+            <h3>Sukuma Wiki Recipe</h3>
+            <h4>Ingredients (2 servings)</h4>
+            <ul>
+              <li>8 cups sukuma wiki (kale or collard greens), chopped</li>
+              <li>  2 tablespoons vegetable oil</li>
+              <li>1 medium onion, chopped</li>
+              <li>1 Tomato, chopped</li>
+              <li>½ cup water</li>
+              <li>Salt</li>
+            </ul>
+            <h4>Instructions</h4>
+            <p>In a cooking pan, add the vegetable oil and onions. Sautee the onions until they are golden brown. Add tomatoes and cook until they soften into a paste. Add the sukuma wiki, salt to taste and ¼cup water. Let the mixture cook on low heat for approximately 5 minutes or until the sukuma wiki has reached a desired tenderness, and still crunchy. Serve with ugali, rice or chapati and any meat of your choice.
+            </p>
+          </div>
+          <div class="jumbotron ugali">
+            <h3>Recipe for Ugali</h3>
+            <h4>Ingredients (4 servings)</h4>
+            <ul>
+              <li>4 cups water</li>
+              <li>4 cups maize meal or corn meal flour</li>
+            </ul>
+            <h4>Directions</h4>
+            <p>Bring water to a boil in a pan. Add the corn or maize meal and stir with a wooden spoon until the mixture is thick and smooth. Make sure it is not too stiff. Add boiling water if it is too thick. Gather the mixture in the middle of the pan and turn the heat to low. Cover the pan and leave it on low heat for 15-20 minutes, turning occasionally. Flip the ugali onto a plate and, after it cools a bit, form it into a "cake". Slice and serve with chicken, beef, fish or meat stew and a cooked vegetable dish or even sour milk (buttermilk).
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- This the begining of the html code for the Api demo-->
+        <div class='container-fluid'>
+          <div class='row header'>
+          </div>
+          <div class='row header'>
+          </div>
+          <div class='col-md-6 col-md-offset-3'>
+            <div class='logo'>
+              <h1><strong>Recipe</strong></h1>
+              <p class='define'>
+                Haven't found anything you fancy? Search here for more
+              </p>
+            </div>
+          </div>
+          <div class='row header'>
+            <div class='col-xs-8 col-xs-offset-3 col-md-8 col-md-offset-3'>
+              <div class='box'>
+                <div class='container-1 searchForm'>
+                  <form class='form-horizontal' id='searchRecipe'>
+                    <input type='hidden' name='app_id' value='e7f27eb3'>
+                    <input type='hidden' name='app_key' value='1a416555863a852b35cd1701d9a4c0c1'>
+                    <input type='hidden' name='to' value='5'>
+                    <div><input type='search'   name='q' value='' id='search' placeholder='Search...' /><span class='icon'><i class='fa fa-search'></i></span></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class='container container-main'>
+          <div id='recipes'>
+          </div>
+        </section>
+        <section>
+          <div id='modals'>
+            <div class='modal modal-transparent fade' tabindex='-1' role='dialog' id='reviewModal'>
+              <div class='modal-dialog'>
+                <div class='modal-content'>
+                  <div class='modal-header'>
+                    <button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
+                    <h4 class='modal-title'>Add Review</h4>
+                  </div>
+                  <div class='modal-body'>
+                    <fieldset class='form-horizontal'>
+                      <div class='form-group'>
+                        <label class='col-md-4 control-label' for='reviewerName'>Your Name</label>
+                        <div class='col-md-4'>
+                          <input id='reviewerName' name='reviewerName' type='text' placeholder='' class='form-control input-md' />
+                        </div>
+                      </div>
+                      <div class='form-group'>
+                        <label class='col-md-4 control-label' for='wouldRecommend'>Recommend This Recipe? Please rate it on a scale of 1 to 10</label>
+                        <div class='col-md-4'>
+                          <input id='recommendationRating' name='recommendation' type='number' class='form-control input-md' placeholder='1 - 10' min='1' max='10' />
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <div class='modal-footer'>
+                    <button type='button' class='btn btn-default' data-dismiss='modal' id='closeModal'>Close</button>
+                    <button type='button' class='btn btn-primary' id='saveReview'>Save Review</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='modal modal-transparent fade' tabindex='-1' role='dialog' id='editModal'>
+              <div class='modal-dialog'>
+                <div class='modal-content'>
+                  <div class='modal-header'>
+                    <button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
+                    <h4 class='modal-title'>Edit Recipe</h4>
+                  </div>
+                  <div class='modal-body'>
+                    <fieldset class='form-horizontal'>
+                      <div class='form-group'>
+                        <label class='col-md-4 control-label' for='editName'>New Recipe Name</label>
+                        <div class='col-md-4'>
+                          <input id='editName' name='editRecipeName' type='text' placeholder='' class='form-control input-md' />
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <div class='modal-footer'>
+                    <button type='button' class='btn btn-default' data-dismiss='modal' id='closeModal'>Close</button>
+                    <button type='button' class='btn btn-primary' id='saveEdit'>Save Edit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- End of html Api code-->
+    </div>
+    <div class="container photos">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="images/chapati.jpeg" style="width: 230px; height: 180px;" >
+        </div>
+        <div class="col-md-3">
+          <img src="images/noodle.JPG">
+        </div>
+        <div class="col-md-3">
+          <img src="images/Soto1.jpg">
+        </div>
+        <div class="col-md-3">
+          <img src="images/Soto.JPG">
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-md-3">
+          <img src="images/Trujillo.jpg">
+        </div>
+        <div class="col-md-3">
+          <img src="images/riceveg.jpg">
+        </div>
+        <div class="col-md-3">
+          <img src="images/lucho.jpg">
+        </div>
+        <div class="col-md-3">
+          <img src="images/Gimchi.jpg">
+        </div>
+      </div>
+    </div>
+    <div class="container contact">
+
+      <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+      <style type="text/css">
+      </style>
+      <div id="mc_embed_signup">
+        <form action="https://github.us18.list-manage.com/subscribe/post?u=35a8b96b14e230203e4f5c93d&amp;id=4f92a59d55" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+            <h2>Subscribe to receive our latest recipes</h2>
+            <div class="mc-field-group">
+              <label for="mce-EMAIL">Email Address </label>
+              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+            </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_35a8b96b14e230203e4f5c93d_4f92a59d55" tabindex="-1" value=""></div>
+          </div>
+        </form>
+      </div>
+      <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+    </div>
+    <div class="container review">
+      <div class="panel-header submissionForm">
+        <h1>Reviews</h1>
+        <h2>Rate your experience!</h2>
+        <div id="stars">
+          <form action="">
+            <input class="star star-5" id="star-5" type="radio" name="star"/>
+            <label class="star star-5" for="star-5"></label>
+            <input class="star star-4" id="star-4" type="radio" name="star"/>
+            <label class="star star-4" for="star-4"></label>
+            <input class="star star-3" id="star-3" type="radio" name="star"/>
+            <label class="star star-3" for="star-3"></label>
+            <input class="star star-2" id="star-2" type="radio" name="star"/>
+            <label class="star star-2" for="star-2"></label>
+            <input class="star star-1" id="star-1" type="radio" name="star"/>
+            <label class="star star-1" for="star-1"></label>
+          </form>
+        </div>
+      </div>
+      <div class="panel-body">
+        <p>We value your feedback! Please enter any questions, comments or concerns in the field below.</p>
+        <div id="review">
+          <form action="">
+            <textarea class="form-control" id="textArea" rows="3"></textarea><br>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+      <div class="panel-header commentsOut">
+      </div>
+      <div id="prevComments"></div>
+    </div>
+    <div class="container footer">
+      <div class="navbar container">
+        <div class="col-md-4">
+          <a class="home1">HOME</a><br>
+          <a class="about1">ABOUT</a>
+        </div>
+        <div class="col-md-4">
+          <a class="menu1">MENU</a><br>
+          <a class="photos1">PHOTOS</a>
+        </div>
+        <div class="col-md-4">
+          <a class="contact1">CONTACT</a><br>
+          <a class="reviews1">REVIEWS</a>
+        </div>
+      </div>
+      <hr>
+      <div class="row" id="icons">
+        <div class="col-sm-3">
+          <img src="img/gmail-128.png" class="icon">
+        </div>
+        <div class="col-sm-3">
+          <img src="img/Facebook-128.png" class="icon">
+        </div>
+        <div class="col-sm-3">
+          <img src="img/Instagram-128.png" class="icon">
+        </div>
+        <div class="col-sm-3">
+          <img src="img/twitter2-128.png" class="icon">
+        </div>
+      </div>
+      <p class="licence"> Created by Clifford Kasera, Reuben Njuguna, Victoria Mayuya and Elvis Amuni.<br>Copyright © | 2018 Victoria's Kitchen, Inc., All rights reserved. </p>
+    </div>
   </body>
-</html>
+  </html>
+
